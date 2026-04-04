@@ -29,7 +29,7 @@
     main {
       grid-area: main;
       background: rgb(33, 33, 33);
-      padding:230px;
+      padding:220px;
       
       border-radius:10px;
     }
@@ -48,19 +48,21 @@
       background:rgb(33, 33, 33);
       color: white;
       text-align: center;
-      padding: 40px;
+      padding: 20px;
       border-radius:10px;
     }
 
     @media (max-width: 767px) {
       .container {
+        display: grid;
         grid-template-columns: 1fr;
+        grid-template-rows: auto auto 1fr auto;
         grid-template-areas:
           "nav"
-          "main"
           "sidebar"
+          "main"
           "footer";}
-      nav {justify-content: flex-start;}
+      nav {justify-content: flex-start; min-height:130px;}
     }
 
   
@@ -70,8 +72,10 @@
         align-items: flex-start;}
       .navbar{padding:20px;}
       .logo{padding:20px;}
+       main{padding:100px;}
     }
-    main, aside{min-height:0; overflow-y:auto;}
+     main,aside{min-height:0; overflow-y:auto;}
+    
      
 
         </style>
