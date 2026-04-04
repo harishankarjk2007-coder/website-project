@@ -1,0 +1,123 @@
+<!doctype html>
+<html>
+    <head>
+        
+        <title>Projects</title>
+        <link rel ="stylesheet" href = "port.css">
+        <style>
+            *{ box-sizing:border-box; font-family:sans-serif; padding:0px; margin:0px;}
+             .logo{text-decoration:none; font-weight:bold; font-size: 30px; color:white;}
+             body{overflow:hidden; margin:0; background-color:rgb(0, 0, 0);}
+             
+             .link{display:inline-block; text-decoration:none; color:white; padding:10px 30px; 
+                border-radius: 20px; 
+                background:rgb(0, 255, 255); 
+                transition:0.3s; margin:10px;}
+                a:hover{background-color:rgb(4, 201, 201);}
+             
+            .container {width:100%; height:100vh;
+                display: grid;
+                grid-template-columns:2fr 1fr;
+                grid-template-rows: auto auto 1fr auto;
+                grid-template-areas:
+                 "nav nav"
+                 "header header"
+                 "main sidebar"
+                 "footer footer";
+                gap: 10px;
+                padding: 10px;
+                }
+    main {
+      grid-area: main;
+      background: rgb(33, 33, 33);
+      padding:2px;
+      border-radius:10px;}
+
+    header{grid-area: header;
+      background:rgb(33, 33, 33);
+      color: white;
+      text-align: center;
+      padding: 20px;
+      border-radius:10px;}
+
+    aside {
+      grid-area: sidebar;
+      background: rgb(33, 33, 33);
+      color: white;
+      padding: 50px 0px 50px 100px;
+      border-radius:10px;
+       overflow-y:auto; 
+    }
+
+    footer {
+      grid-area: footer;
+      background:rgb(33, 33, 33);
+      color: white;
+      text-align: center;
+      
+      padding: 20px;
+      border-radius:10px;
+    }
+
+    @media (max-width: 767px) {
+      .container {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+          "nav"
+          "header"
+          "main"
+          "sidebar"
+          "footer";}
+      nav {justify-content: flex-start;}
+    }
+
+  
+    @media (max-width: 599px) {
+      nav {
+        flex-direction: column;
+        align-items: flex-start;}
+      .navbar{padding:20px;}
+      .logo{padding:20px;}
+    }
+    main, aside{min-height:0; overflow-y:auto;}
+     
+
+        </style>
+
+        </head>
+        <body>
+            
+            <div class="container" >
+            <nav class ="navbar">                                
+                <a href ="#" class ="logo">MyPortfolio</a>
+                <ul class = "nav-op">
+                    <li><a href="Website Portfolio.html">Home</a></li>
+                    <li><a href="About.html">About</a></li>
+                    <li><a href="Projects.html">Projects</a></li>
+                    <li><a href="Contacts.html">Contacts</a></li>
+                </ul>   
+             </nav>
+             <header style = "color:Aqua; font-size:25px; font-weight:bold;">My Work</header>
+                <main><p>I have to admit, Although these aren't exactly 'Projects' that you would expect, 
+                    they are still some of the work I gave my time so I can learn more more about web designing. 
+                
+                <h3 style = "color:Aqua; font-size:25px; font-weight:bold;">Please look into the following:</h3>
+                    
+                     <ul>
+                    <li><a class = "link" href ="c:\Users\hari shanker\OneDrive\Documents\23CSE113 AM.SC.U4CSE25122 HTML form assignment.pdf">
+                                Form Sample</a></li>
+                    <li><a class = "link" href ="c:\Users\hari shanker\OneDrive\Documents\AM.SC.U4CSE25122 HTML labsheet-1.pdf">
+                                Labsheet 1</a></li>
+                    <li><a class = "link" href ="c:\Users\hari shanker\OneDrive\Documents\AM.SC.U4CSE25122 html labsheet - 2 modified.pdf">
+                                Labsheet 2</a></li>
+                    <li><a class = "link" href ="c:\Users\hari shanker\OneDrive\Desktop\AM.SC.U4CSE25122 HTML labsheet-3.pdf">
+                                Labsheet 3</a></li>
+                    </ul>
+                      
+                    </main>
+                <aside><img style="display: block; margin:auto; background-color:white; border-radius:10px; width:80%;" 
+                    src="https://media.tenor.com/pkAXpGzqrjcAAAAM/look-here-watch-this.gif"></aside>
+                <footer><p>© 2026 Harishankar | All Rights Reserved</p></footer> 
+            </div>  
+        </body>
+    </html>

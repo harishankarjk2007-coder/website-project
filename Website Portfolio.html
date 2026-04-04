@@ -1,0 +1,103 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset = "UTF-8">
+        <meta name = "description" content = "Intriguing Portfolio">
+        <meta name = "Keywords" content = "html, CSS">
+        <meta name = "author" content = "Harishankar J">
+        <meta http equiv = "refresh" content = "30"> 
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <meta name = "">
+        <title>My Website Portfiolio</title>
+        <link rel ="stylesheet" href = "port.css">
+        <style>
+            *{ box-sizing:border-box; font-family:sans-serif; padding:0px; margin:0px;}
+             .logo{text-decoration:none; font-weight:bold; font-size: 30px; color:white;}
+             body{overflow:hidden; margin:0; background-color:rgb(0, 0, 0);}
+             
+            .container {width:100%; height:100vh;
+                display: grid;
+                grid-template-columns:2fr 1fr;
+                grid-template-rows: auto 1fr auto;
+                grid-template-areas:
+                 "nav nav"
+                 "main sidebar"
+                 "footer footer";
+                gap: 10px;
+                padding: 10px;
+                }
+    main {
+      grid-area: main;
+      background: rgb(33, 33, 33);
+      padding:230px;
+      
+      border-radius:10px;
+    }
+
+    aside {
+      grid-area: sidebar;
+      background: rgb(33, 33, 33);
+      color: white;
+      padding: 50px 0px 50px 100px;
+      border-radius:10px;
+       overflow-y:auto; 
+    }
+
+    footer {
+      grid-area: footer;
+      background:rgb(33, 33, 33);
+      color: white;
+      text-align: center;
+      padding: 40px;
+      border-radius:10px;
+    }
+
+    @media (max-width: 767px) {
+      .container {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+          "nav"
+          "main"
+          "sidebar"
+          "footer";}
+      nav {justify-content: flex-start;}
+    }
+
+  
+    @media (max-width: 599px) {
+      nav {
+        flex-direction: column;
+        align-items: flex-start;}
+      .navbar{padding:20px;}
+      .logo{padding:20px;}
+    }
+    main, aside{min-height:0; overflow-y:auto;}
+     
+
+        </style>
+
+        </head>
+        <body>
+            
+            <div class="container" >
+            <nav class ="navbar">                                
+                <a href ="#" class ="logo">MyPortfolio</a>
+                <ul class = "nav-op">
+                    <li><a href="Website Portfolio.html">Home</a></li>
+                    <li><a href="About.html">About</a></li>
+                    <li><a href="Projects.html">Projects</a></li>
+                    <li><a href="Contacts.html">Contacts</a></li>
+                </ul>   
+             </nav>
+                <main><h1 style = "color:aqua; font-size:60px;">Hello, I'm Harishankar J.</h1>
+
+                        <p style="color:aqua; font-size:25px; padding:5px; margin:10px;">I am a beginner web developer learning HTML & CSS, although 
+                                                                I haven't gained real professional experience yet,</p>
+
+                        <p style="color:aqua; margin:10px; padding:5px;">I create simple and clean websites.<br>You should work with me because I am dedicated and always learning.
+                        <br>I focus on improving my skills and being better what I am.</p> 
+                </main>
+                <aside><img style=" width:72%; border-radius:80px;" src="https://i.pinimg.com/736x/9f/4a/27/9f4a27c7d9e9053e01c9bc6e44d72c63.jpg"></aside>
+                <footer><p>© 2026 Harishankar | All Rights Reserved</p></footer>   
+            </body>
+    </html>
