@@ -1,0 +1,21 @@
+.navbar {grid-area:nav; display:flex; 
+    justify-content:space-between; 
+     align-items:center;
+    background-color:rgb(0, 169, 169); 
+    padding:8px 30px;
+      overflow:hidden;
+    border-radius:7px;}
+
+.nav-op {list-style:none; display:flex; gap:60px;}
+.nav-op a{color:white; text-decoration:none; padding:16px 12px; transition:0.3s;}
+main p{color:aqua; font-size:20px; padding:5px; margin:10px;}
+
+
+
+
+
+.nav-op a:hover{background: rgb(13, 129, 155);
+  color:white; padding: 17px 17px; border-radius:10px;}
+
+
+
