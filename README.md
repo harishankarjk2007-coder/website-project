@@ -16,7 +16,7 @@
   
 - Sidebar section: It is secondary section were some additional details are written.(in this case, I uploaded funny gifs to show the viewers how serious I am in each section.)
   
-- Footer secction: It is a not so important sections were other details like contacts are written.(in this case, It used to specify the reservation rights of this website.)
+- Footer section: It is a not so important sections were other details like contacts are written.(in this case, It used to specify the reservation rights of this website.)
 
 
 
