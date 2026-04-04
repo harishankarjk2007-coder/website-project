@@ -3,4 +3,9 @@
 
  The structure is pretty simple. It consists of 4 primary sections:
 
+ a. Navigation bar
+ b. Main section 
+ c. Sidebar section
+ d. Footer section
+
 
