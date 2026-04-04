@@ -22,8 +22,8 @@
 - Footer section: It is a not so important sections were other details like contacts are written.(in this case, It used to specify the reservation rights of this website.)
 
 # The Actual Pages
- 
  there are four pages:
+ ##
  -[Home]#Home
  -[About]#About
  -[Projects]#Projects
