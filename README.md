@@ -24,10 +24,10 @@
 # The Actual Pages
  there are four pages:
  ##
- -[Home]#Home
- -[About]#About
- -[Projects]#Projects
- -[Contacts]#Contacts  
+ -[Home](#Home)
+ -[About](#About)
+ -[Projects](#Projects)
+ -[Contacts](#Contacts)  
 
 
 
