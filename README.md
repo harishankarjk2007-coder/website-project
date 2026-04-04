@@ -4,6 +4,12 @@
 # Basic structure
  The structure is pretty simple. It consists of 4 primary sections:
 
+ ##
+ - Navigation bar
+ - Main section
+ - Sidebar section
+ - Footer section
+
 
 
 
